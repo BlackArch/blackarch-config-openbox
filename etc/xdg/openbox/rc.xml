@@ -4,7 +4,7 @@
         Copy the file to $HOME/.config/openbox/ instead. -->
 
 <openbox_config xmlns="http://openbox.org/3.4/rc"
-		xmlns:xi="http://www.w3.org/2001/XInclude">
+        xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <resistance>
   <strength>10</strength>
@@ -272,7 +272,153 @@
       </finalactions>
     </action>
   </keybind>
-
+    <!-- Window Tiling: Snap feature 
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    -->
+    <keybind key="W-F">
+      <action name="MaximizeFull"/>
+    </keybind>
+    <keybind key="W-S-F">
+      <action name="UnmaximizeFull"/>
+    </keybind>
+    <keybind key="W-S-k">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-15</x>
+        <y>15</y>
+        <height>96%</height>
+        <width>47%</width>
+      </action>
+    </keybind>
+    <keybind key="W-S-j">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>15</x>
+        <y>15</y>
+        <height>96%</height>
+        <width>47%</width>
+      </action>
+    </keybind>
+    <!-- Top right-->
+    <keybind key="W-k">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-15</x>
+        <y>15</y>
+      </action>
+    </keybind>
+    <!-- Top left-->
+    <keybind key="W-h">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>15</x>
+        <y>15</y>
+      </action>
+    </keybind>
+    <!-- Bottom left-->
+    <keybind key="W-j">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>15</x>
+        <y>-15</y>
+      </action>
+    </keybind>
+    <!-- Bottom right-->
+    <keybind key="W-l">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-15</x>
+        <y>-15</y>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>15</x>
+        <y>15</y>
+        <height>97%</height>
+        <width>32%</width>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>34%</x>
+        <y>15</y>
+        <height>97%</height>
+        <width>32%</width>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-17</x>
+        <y>15</y>
+        <height>97%</height>
+        <width>32%</width>
+      </action>
+    </keybind>
+    <!-- Move -->
+    <keybind key="W-Right">
+      <action name="MoveRelative">
+        <x>20</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="MoveRelative">
+        <x>-20</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="MoveRelative">
+        <x>0</x>
+        <y>-20</y>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="MoveRelative">
+        <x>0</x>
+        <y>20</y>
+      </action>
+    </keybind>
+    <!-- Resize -->
+    <keybind key="W-S-Right">
+      <action name="ResizeRelative">
+        <right>20</right>
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="ResizeRelative">
+        <right>-20</right>
+      </action>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="ResizeRelative">
+        <bottom>20</bottom>
+      </action>
+    </keybind>
+    <keybind key="W-S-Up">
+      <action name="ResizeRelative">
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
   <!-- Keybindings for window switching with the arrow keys -->
   <keybind key="W-S-Right">
     <action name="DirectionalCycleWindows">
