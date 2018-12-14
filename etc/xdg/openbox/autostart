@@ -12,10 +12,13 @@
 #  gnome-settings-daemon &
 #fi
 
+# load bitmap fonts if possible users use it
+#xset fp+ ~/.fonts
+#xset fp rehash
+
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
 
-
-### blackarch related ###
-feh --bg-scale /usr/share/blackarch/wallpaper.png &
+# read the newly current wallpaper
+. ~/.fehbg
