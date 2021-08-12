@@ -17548,15 +17548,7 @@
   </item>
 </menu>
 
-<menu id="blackarch-gpu-menu" label="gpu">
-</menu>
-
 <menu id="blackarch-hardware-menu" label="hardware">
-  <item label="arduino">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'arduino ; bash'</command>
-      </action>
-  </item>
   <item label="arduino">
       <action name="Execute">
           <command>urxvt -e sh -c 'arduino ; bash'</command>
