@@ -11,7 +11,7 @@ BlackArch Linux configuration files for the openbox window manager.
 Copy the following files:
 
 1. `cp -a /usr/share/blackarch/config/openbox/etc/xdg/openbox /etc/xdg/openbox`
-2. `cp -a /usr/share/blackarch/config/openbox/usr/share/themes/blackarch/openbox-3/* /usr/share/themes/blackarch/openbox-3/`
+2. `cp -a /usr/share/blackarch/config/openbox/usr/share/themes/blackarch/openbox-3 /usr/share/themes/blackarch/openbox-3/`
 
 ## Get Involved
 
